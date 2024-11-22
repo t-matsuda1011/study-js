@@ -1,0 +1,12 @@
+.hello {
+    font-size: 100px;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    color: white;
+    text-align: center;
+}

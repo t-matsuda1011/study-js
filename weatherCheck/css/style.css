@@ -1,0 +1,152 @@
+body {
+    font-size: 100%;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+img {
+    width: 100%;
+}
+section {
+    margin-top: 40px;
+}
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.siteTitle {
+    margin: 30px 0;
+}
+
+/*トップ*/
+.weatherTop {
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.topText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#place {
+    display: flex;
+    align-items: center;
+}
+#prefecture {
+    margin: 0 5px;
+    padding: 1px;
+    text-align: center  ;
+    font-size: 1.2rem;
+}
+#weatherCheckBtn {
+    margin-left: 20px;
+    font-size: 1rem;
+}
+#noId {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: #d94f4f;
+}
+
+
+/*詳細*/
+#weatherDetail {
+    padding: 20px;
+    background-color: rgb(229, 245, 244);
+    border-radius: 20px;
+}
+.detailTop {
+    margin-bottom: 20px;
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#weatherImg {
+    width: 40%;
+}
+#weatherTelop {
+    width: 40%;
+    font-size: 2rem;
+}
+
+
+.temperature {
+    margin-bottom: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center
+}
+.maxText {
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #000000;
+}
+
+.rainChance {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center ;
+}
+.rainText {
+    margin-right: 20px;
+}
+.rain {
+    margin-right: 20px;
+    padding-right: 10px;
+    border-right: 1px solid #000000;
+}
+
+.comment {
+    padding: 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+    .topText {
+        display: block;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    #place {
+        justify-content: center;
+    }
+    #prefecture {
+        font-size: 1rem;
+    }
+    #weatherCheckBtn {
+        font-size: 0.8rem;
+    }
+
+    .detailTop {
+        padding: 0 10%;
+    }
+    #weatherImg {
+        width: 45%;
+    }
+    #weatherTelop {
+        width: 45%;
+        font-size: 1.5rem;
+    }
+
+    .rainChance {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+    }
+    .rainText {
+        margin-right: 0;
+    }
+    .rain {
+        margin-right: 0;
+        padding-right: 0;
+        border-right: none;
+    }
+}

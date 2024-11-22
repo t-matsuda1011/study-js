@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://owl-stock.work/wp-content/uploads/2021/03/00957-tmb.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <title>お天気チェック</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="siteTitle">お天気チェック</h1>
+        <section class="weatherTop">
+            <div class="topText">明日（<span id="date"></span>）の
+                <form id="place">
+                    <select name="都道府県" id="prefecture">
+                        <option value="" selected></option>
+                        <option value="016010">北海道</option>
+                        <option value="020010">青森県</option>
+                        <option value="030010">岩手県</option>
+                        <option value="040010">宮城県</option>
+                        <option value="050010">秋田県</option>
+                        <option value="060010">山形県</option>
+                        <option value="070010">福島県</option>
+                        <option value="080010">茨城県</option>
+                        <option value="090010">栃木県</option>
+                        <option value="100010">群馬県</option>
+                        <option value="110010">埼玉県</option>
+                        <option value="120010">千葉県</option>
+                        <option value="130010">東京都</option>
+                        <option value="140010">神奈川県</option>
+                        <option value="150010">新潟県</option>
+                        <option value="160010">富山県</option>
+                        <option value="170010">石川県</option>
+                        <option value="180010">福井県</option>
+                        <option value="190010">山梨県</option>
+                        <option value="200010">長野県</option>
+                        <option value="210010">岐阜県</option>
+                        <option value="220010">静岡県</option>
+                        <option value="230010">愛知県</option>
+                        <option value="240010">三重県</option>
+                        <option value="250010">滋賀県</option>
+                        <option value="260010">京都府</option>
+                        <option value="270000">大阪府</option>
+                        <option value="280010">兵庫県</option>
+                        <option value="290010">奈良県</option>
+                        <option value="300010">和歌山県</option>
+                        <option value="310010">鳥取県</option>
+                        <option value="320010">島根県</option>
+                        <option value="330010">岡山県</option>
+                        <option value="340010">広島県</option>
+                        <option value="350010">山口県</option>
+                        <option value="360010">徳島県</option>
+                        <option value="370000">香川県</option>
+                        <option value="380010">愛媛県</option>
+                        <option value="390010">高知県</option>
+                        <option value="400010">福岡県</option>
+                        <option value="410010">佐賀県</option>
+                        <option value="420010">長崎県</option>
+                        <option value="430010">熊本県</option>
+                        <option value="440010">大分県</option>
+                        <option value="450010">宮崎県</option>
+                        <option value="460010">鹿児島県</option>
+                        <option value="471010">沖縄県</option>
+                    </select>
+                    の天気
+                    <button type="submit" id="weatherCheckBtn">チェック！</button>
+                </form>
+            </div>
+            <p id="noId"></p>
+        </section>
+        <section id="weatherDetail">
+            <div class="detailTop">
+                <div id="weatherImg"></div>
+                <div id="weatherTelop"></div>
+            </div>
+            <ul class="temperature">
+               <li class="maxText">最高気温: <span id="max"></span>℃</li> 
+               <li class="minText">最低気温: <span id="min"></span>℃</li>
+            </ul>
+            <ul class="rainChance">
+                <li class="rainText">降水確率: </li>
+                <li class="rain"><span id="rain1"></span>(0-6)</li>
+                <li class="rain"><span id="rain2"></span>(6-12)</li>
+                <li class="rain"><span id="rain3"></span>(12-18)</li>
+                <li class="rain"><span id="rain4"></span>(18-24)</li>
+            </ul>
+            <div class="comment">
+                コメント: <span id="weatherComment"></span>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

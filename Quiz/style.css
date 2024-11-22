@@ -1,0 +1,9 @@
+body {
+  font-family: "Meiryo", "メイリオ";
+  counter-reset: number 0;
+}
+
+.btn::before {
+  counter-increment: number 1;
+  content: counter(number) ". ";
+}
